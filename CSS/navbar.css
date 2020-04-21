@@ -1,0 +1,178 @@
+/* Small Mobile Screens */
+nav {
+    background-color: rgb(156, 31, 40);
+    margin: auto;
+    width: 100%;
+}
+
+.nav-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-container {
+    background-color: rgb(156, 31, 40);
+    display: flex;
+    justify-content: center;
+}
+
+.logo-img {
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+nav ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    background-color: rgb(156, 31, 40);
+}
+
+nav ul li {
+    padding: 10px;
+    border-top: 1px solid rgb(255, 255, 216);
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(255, 242, 124);
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+}
+
+.list-hover-a:hover {
+    background-color: #A0D2ec;
+}
+
+.list-a {
+    background-color: #A0D2ec;
+}
+
+.list-hover-b:hover {
+    background-color: rgb(255, 83, 95);
+}
+
+.list-b {
+    background-color: rgb(255, 83, 95);
+}
+
+.list-hover-c:hover {
+    background-color: rgb(250, 168, 75);
+}
+
+.list-c {
+    background-color: rgb(250, 168, 75);
+}
+
+.list-hover-d:hover {
+    background-color: rgb(27, 27, 27);
+}
+
+.list-d {
+    background-color: rgb(27, 27, 27);
+}
+
+/* Tablet Screens */
+@media(min-width: 500px) {
+    .nav-flex {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo-container {
+        justify-content: flex-start;
+    }
+
+    .logo-img {
+        width: 50%;
+        height: auto;
+        padding: 15px;
+    }
+
+    nav ul {
+        text-align: center;
+        align-items: center;
+    }
+
+    nav ul li {
+        border-top: none;
+        padding-right: 30px;
+    }
+
+    .list-hover-a:hover {
+        background-color: rgb(156, 31, 40);
+    }
+
+    nav a.link-a:hover {
+        color: #A0D2ec;
+    }
+    
+    .list-a {
+        border-bottom: solid 4px #A0D2ec;
+        background-color: rgb(156, 31, 40);
+    }
+    
+    li.list-hover-b:hover {
+        background-color: rgb(156, 31, 40);
+    }
+
+    nav a.link-b:hover {
+        color: rgb(255, 83, 95);
+    }
+    
+    .list-b {
+        border-bottom: solid 4px rgb(255, 83, 95);
+        background-color: rgb(156, 31, 40);
+    }
+    
+    .list-hover-c:hover {
+        background-color: rgb(156, 31, 40);
+    }
+
+    nav a.link-c:hover {
+        color: rgb(250, 168, 75);
+    }
+    
+    .list-c {
+        border-bottom: solid 4px rgb(250, 168, 75);
+        background-color: rgb(156, 31, 40);
+    }
+    
+    .list-hover-d:hover {
+        background-color: rgb(156, 31, 40);
+    }
+
+    nav a.link-d:hover{
+        color: rgb(27, 27, 27);
+    }
+    
+    .list-d {
+        border-bottom: solid 4px rgb(27, 27, 27);
+        background-color: rgb(156, 31, 40);
+    }
+}
+
+/* Laptop Screens */
+@media(min-width: 768px) {
+    .logo-img {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    nav ul li {
+        border-top: none;
+        padding: 30px;
+    }
+
+    nav a {
+        font-size: 24px;
+    }
+}
+
+/* Large Laptop Screens */
+@media(min-width: 960px) {
+    
+}

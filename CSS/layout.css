@@ -1,0 +1,353 @@
+/* Small Mobile Screens */
+
+    /* Home Page */
+    .grid-container {
+        display: grid;
+        box-sizing: border-box;
+    }
+
+    .home-grid-1 {
+        grid-template-columns: auto;
+        margin: 50px auto;
+    }
+
+    .home-grid-2 {
+        width: 30%;
+        margin: 0px auto 60px;
+        grid-template-columns: 45% 45%;
+        grid-row: 45% 45%;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .home-item-c {
+        grid-column: 1 / span 1;
+        grid-row: 1;
+    }
+
+    .home-item-d {
+        grid-column: 2 / span 1;
+        grid-row: 1;
+    }
+
+    .home-item-e {
+        grid-column: 1 / span 1;
+        grid-row: 2;
+    }
+
+    .home-item-f {
+        grid-column: 2 / span 1;
+        grid-row: 2;
+    }
+
+    .footer-grid {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto;
+        justify-items: center;
+        padding: 15px;
+    }
+
+    .home-item-g {
+        grid-column: 1 / span 1;
+        grid-row: 1;
+    }
+
+    .home-item-h {
+        grid-column: 2 / span 1;
+        grid-row: 1;
+    }
+
+    .home-item-i {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+    }
+
+    /* Footer for all pages excluding  Home Page */
+    .fg-b {
+        grid-template-columns: 25% 25% 25% 25%;
+        width: 60%;
+        margin: auto;
+        justify-items: center;
+        padding-bottom: 30px;
+    }
+
+    .foot-item-a {
+        grid-column: 1 / span 1;
+    }
+
+    .foot-item-b {
+        grid-column: 2 / span 1;        
+    }
+
+    .foot-item-c {
+        grid-column: 3 / span 1;
+    }
+
+    .foot-item-d {
+        grid-column: 4 / span 1;
+    }
+
+    /* About Page */
+    .about-grid {
+        grid-template-columns: auto;
+        margin: 50px auto;
+        padding: 0px 40px;
+    }
+
+    /* Menu Page */
+
+    /* Location Page */
+    .location-grid {
+        grid-template-columns: auto;
+    }
+
+    /* News Page */
+    .news-grid {
+        grid-template-columns: auto;
+    }
+
+    .news-button a {
+        display: block;
+    }
+
+/* Tablet Screens */
+@media(min-width: 500px) {
+    /* Home Page */
+    .home-grid-2 {
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: auto;
+        width: 50%;
+        justify-content: center;
+    }
+
+    .home-item-c {
+        grid-column: 1 / span 1;
+        grid-row: 1;
+    }
+
+    .home-item-d {
+        grid-column: 2 / span 1;
+        grid-row: 1;
+    }
+
+    .home-item-e {
+        grid-column: 3 / span 1;
+        grid-row: 1;
+    }
+
+    .home-item-f {
+        grid-column: 4 / span 1;
+        grid-row: 1;
+    }
+
+    .footer-grid {
+        grid-template-columns: 180px 140px 140px;
+        justify-items: start;
+        padding-left: 30px;
+    }
+
+    .home-item-g {
+        grid-column: 1 / span 1;
+        grid-row: 1;
+    }
+
+    .home-item-h {
+        grid-column: 2 / span 1;
+        grid-row: 1;
+    }
+
+    .home-item-i {
+        grid-column: 3 / span 1;
+        grid-row: 1;
+    }
+
+    /* Footer for all pages excluding  Home Page */
+    .fg-a {
+        grid-template-columns: 33% 33% 33%;;
+        margin: auto;
+        justify-items: center;
+    }
+
+    /* About Page */
+    .about-grid {
+        grid-template-columns: 30% 4.5% 30% 4.5% 30%;
+        grid-template-rows: auto auto auto auto;
+    }
+
+    .about-item-a {
+        grid-column: 2 / span 3;
+        grid-row: 1;
+    }
+
+    .about-item-b {
+        grid-column: 1 / span 5;
+        grid-row: 2;
+    }
+
+    .about-item-c {
+        grid-column: 1 / span 1;
+        grid-row: 3;
+    }
+
+    .about-item-d {
+        grid-column: 3 / span 1;
+        grid-row: 3;
+    }
+
+    .about-item-e {
+        grid-column: 5 / span 1;
+        grid-row: 3;
+    }
+
+    .about-item-f {
+        grid-column: 1 / span 5;
+        grid-row: 4;
+    }
+
+    /* Menu Page */
+
+    /* Location Page */
+
+    /* News Page */
+    
+}
+
+/* Laptop Screens */
+@media(min-width: 768px) {
+
+    /* Footer for all pages excluding  Home Page */
+    .footer-grid-2 {
+        grid-template-columns: 65% auto 30%;
+        justify-content: space-between;
+    }
+
+    .fg-a {
+        grid-column: 1 / span 1;
+        grid-row: 1;
+        justify-items: start;
+        margin: 0px;
+        max-width: 500px;
+    }
+
+    .fg-b {
+        grid-column: 3 / span 1;
+        grid-row: 1;
+        justify-items: end;
+        padding-bottom: 0px;
+        width: 80%;
+        max-width: 210px;
+    }
+
+    .fg-b img {
+        width: 60%;
+    }
+
+    /* About Page */
+
+    /* Menu Page */
+
+    /* Location Page */
+
+    /* News Page */
+    .news-grid {
+        grid-template-columns: 30% 4.5% 30% 4.5% 30%;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+    }
+
+    .news-grid .grid-item {
+        align-self: center;
+        justify-self: center;
+        padding: 30px 0px;
+    }
+
+    .news-item-a {
+        grid-column: 2 / span 3;
+        grid-row: 1;
+    }
+
+    .news-item-b {
+        grid-column: 1 / span 1;
+        grid-row: 2;
+    }
+
+    .news-item-c {
+        grid-column: 3 / span 3;
+        grid-row: 2;
+    }
+
+    .news-item-e {
+        grid-column: 1 / span 3;
+        grid-row: 3;
+    }
+
+    .news-item-d {
+        grid-column: 5 / span 1;
+        grid-row: 3;
+    }
+
+    .news-item-f {
+        grid-column: 1 / span 1;
+        grid-row: 4;
+    }
+
+    .news-grid-g {
+        grid-column: 3 / span 3;
+        grid-row: 4;
+    }
+
+    .about-item-i {
+        grid-column: 1 / span 3;
+        grid-row: 5;
+    }
+
+    .news-item-h {
+        grid-column: 5 / span 1;
+        grid-row: 5;
+    }
+
+    .news-item-j {
+        grid-column: 1 / span 1;
+        grid-row: 6;
+    }
+
+    .news-item-k {
+        grid-column: 3 / span 3;
+        grid-row: 6;
+    }
+
+    .news-item-m {
+        grid-column: 1 / span 3;
+        grid-row: 7;
+    }
+
+    .news-item-l {
+        grid-column: 5 / span 1;
+        grid-row: 7;
+    }
+
+    .news-item-n {
+        grid-column: 1 / span 1;
+        grid-row: 8;
+    }
+
+    .news-item-o {
+        grid-column: 3 / span 3;
+        grid-row: 8;
+    }
+
+    .news-item-q {
+        grid-column: 1 / span 3;
+        grid-row: 9;
+    }
+
+    .news-item-p {
+        grid-column: 5 / span 1;
+        grid-row: 9;
+    }
+
+}
+
+/* Large Laptop Screens */
+@media(min-width: 960px) {
+    
+}
